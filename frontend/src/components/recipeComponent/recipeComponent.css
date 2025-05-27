@@ -1,0 +1,190 @@
+.recipe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 25px 50px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.element-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.element-heading {
+  font-weight: 600;
+  margin: 0;
+  color: rgb(255, 150, 25);
+}
+
+.input-element {
+  width: 100%;
+  max-width: 20rem;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  color: grey;
+  box-sizing: border-box;
+}
+
+.input-element:focus {
+  outline: rgb(255, 180, 90) auto 1px;
+}
+
+.element-container-lgb {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.add-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: rgb(255, 180, 90);
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: rgb(255, 160, 70);
+}
+
+.recipe-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.list-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.span-title {
+  font-size: 16px;
+  color: rgb(255, 140, 0);
+}
+
+.recipe-option-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.recipe-update-button,
+.recipe-delete-button {
+  color: white;
+  background-color: rgba(255, 180, 90, 0.75);
+  font-size: 13px;
+  font-weight: 400;
+  transition: 0.3s;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.recipe-delete-button {
+  background-color: rgba(255, 75, 75, 0.75);
+}
+
+.recipe-update-button:hover {
+  background-color: orange;
+}
+
+.recipe-delete-button:hover {
+  background-color: red;
+}
+
+.select-field {
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  color: grey;
+  box-sizing: border-box;
+}
+
+.select-field:focus {
+  outline: rgb(255, 180, 90) auto 1px;
+}
+
+.time-text {
+  font-size: 1.3rem;
+  color: gray;
+}
+
+.client-error-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.recipe-submit-button {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: rgb(255, 180, 90);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.recipe-submit-button:hover {
+  background-color: rgb(255, 160, 70);
+}
+
+@media (max-width: 768px) {
+  .recipe-form {
+    padding: 20px;
+  }
+
+  .element-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .input-element,
+  .select-field {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-form {
+    padding: 15px;
+  }
+
+  .element-heading {
+    font-size: 1rem;
+  }
+
+  .input-element,
+  .select-field {
+    padding: 0.5rem;
+  }
+
+  .add-button,
+  .recipe-update-button,
+  .recipe-delete-button,
+  .recipe-submit-button {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .time-text {
+    font-size: 1rem;
+  }
+}

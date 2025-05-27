@@ -1,0 +1,143 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100vh;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.signup-image-container {
+  padding: 2rem;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+
+.app-name {
+  position: absolute;
+  top: 38%;
+  left: 25%;
+  transform: translate(-50%, -50%) rotate(0.95turn);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 1rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(255, 150, 25);
+}
+
+.form-container {
+  max-width: 25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  margin: 2rem;
+  padding: 2rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+  box-shadow: 0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.1);
+}
+
+.signup-heading {
+  font-size: 2rem;
+  color: rgb(255, 180, 90);
+  margin: 0.5rem 0;
+}
+
+.signup-hr {
+  width: 100%;
+  border: 1px solid rgb(255, 180, 90);
+  margin: 1rem 0;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.input-field {
+  width: 100%;
+  max-width: 20rem;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+  color: grey;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  outline: rgb(255, 180, 90) auto 1px;
+}
+
+.password-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 20rem;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 4%;
+  cursor: pointer;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875rem;
+  margin: 0.5rem 0;
+}
+
+.submit-button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: rgb(255, 180, 90);
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: rgb(255, 160, 70);
+}
+
+.navigate {
+  color: rgb(255, 180, 90);
+}
+
+.link-text {
+  margin-left: 0.2rem;
+  color: rgb(255, 180, 90);
+  text-decoration: none;
+}
+
+.link-text:hover {
+  color: rgb(255, 135, 25);
+  text-decoration: underline;
+}

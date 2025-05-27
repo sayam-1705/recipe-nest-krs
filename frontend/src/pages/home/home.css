@@ -1,0 +1,112 @@
+.how-to {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 25px 0;
+}
+
+.info-heading {
+  margin: 0;
+  font-size: 3em;
+  color: rgb(255, 140, 0);
+  margin: 15px 0;
+}
+
+.info-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+}
+
+.search,
+.weather-suggestion,
+.create {
+  background-color: rgba(255, 200, 150, 0.75);
+  height: 500px;
+  width: 500px;
+  position: absolute;
+  z-index: 1;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.75s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(5px);
+}
+
+.search {
+  left: 5%;
+}
+
+.create {
+  right: 5%;
+}
+
+.search:hover,
+.weather-suggestion:hover,
+.create:hover {
+  background-color: rgba(255, 200, 150, 1);
+  z-index: 10;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 60px;
+}
+
+.content-heading {
+  color: rgb(255, 140, 0);
+}
+
+.content-description {
+  font-size: 1em;
+  line-height: 1.75em;
+  color: rgb(255, 150, 0);
+}
+
+.show-button {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: rgb(255, 180, 90);
+  color: rgb(235, 235, 235);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.75s;
+}
+
+.show-button:hover {
+  background-color: rgb(255, 160, 70);
+}
+
+@media (min-width: 768px) {
+  .search,
+  .weather-suggestion,
+  .create {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search,
+  .weather-suggestion,
+  .create {
+    height: 500px;
+    width: 500px;
+  }
+}

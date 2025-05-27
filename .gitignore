@@ -1,0 +1,32 @@
+# References
+flowchart.drawio
+FlowChart.pdf
+References.txt
+Plate Planner Documentation.docx
+Plate Planner Flowchart.png
+
+# IDE-specific files
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+dist/
+build/
+coverage/

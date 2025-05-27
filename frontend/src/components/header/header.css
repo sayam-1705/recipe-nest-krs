@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 180, 90, 0.2);
+  padding: 15px;
+  box-shadow: 5px 5px 15px rgb(255, 180, 90, 0.35);
+}
+
+.logo {
+  margin: 0;
+  color: rgb(255, 150, 25);
+  font-size: 24px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.nav-link {
+  color: rgb(255, 180, 90);
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  padding: 5px 10px;
+  margin: 5px;
+  border-bottom: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.nav-link:hover,
+.active {
+  color: rgb(255, 130, 10);
+  border-bottom: 2px solid rgb(255, 160, 70);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather {
+  color: rgb(255, 140, 0);
+  font-size: 16px;
+}
+
+.dashboard-link {
+  color: white;
+  background-color: rgb(255, 180, 90);
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+  padding: 5px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.dashboard-link:hover {
+  background-color: rgb(255, 160, 70);
+}
+
+.connect-link {
+  color: white;
+  background-color: rgb(255, 180, 90);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s;
+  padding: 7px 17px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.connect-link:hover {
+  background-color: rgb(255, 160, 70);
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    padding: 25px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+  }
+
+  .dashboard-link {
+    font-size: 20px;
+  }
+}
